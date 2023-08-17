@@ -69,6 +69,12 @@ function responsiveRefresh(){
         //Mobile
         $('.main_nav').css("display", "none");
 
+        $('.about-me').removeClass("col-8");
+        $('.about-me-events').removeClass("col-4");
+        $('.about-me').addClass("col-12");
+        $('.about-me-events').addClass("col-12");
+
+
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
         $('.ul_footer_links').removeClass("justify-content-end");
@@ -79,10 +85,13 @@ function responsiveRefresh(){
         //Mobile
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
-
-
         $('.main_nav').css("display", "block");
         
+        $('.about-me').removeClass("col-12");
+        $('.about-me-events').removeClass("col-12");
+        $('.about-me').addClass("col-8");
+        $('.about-me-events').addClass("col-4");
+
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
         $('.text_footer').removeClass("col-12");
@@ -93,8 +102,12 @@ function responsiveRefresh(){
         //Table
     }else if($(window).width() > 982){
         //Desktop
-
         $('.main_nav').css("display", "block");
+
+        $('.about-me').removeClass("col-12");
+        $('.about-me-events').removeClass("col-12");
+        $('.about-me').addClass("col-8");
+        $('.about-me-events').addClass("col-4");
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");

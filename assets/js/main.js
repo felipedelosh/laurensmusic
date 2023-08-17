@@ -39,6 +39,8 @@ function responsiveRefresh(){
 
 
 
+
+
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
         $('.ul_footer_links').removeClass("justify-content-end");
@@ -46,7 +48,6 @@ function responsiveRefresh(){
         $('.text_footer').addClass("col-12");
         $('.laurens_footer_text').addClass("text-center");
         $('.ul_footer_links').addClass("justify-content-center");
-
         //Mobile
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
@@ -55,6 +56,8 @@ function responsiveRefresh(){
 
 
 
+
+        
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
         $('.text_footer').removeClass("col-12");

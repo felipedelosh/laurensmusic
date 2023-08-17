@@ -35,31 +35,43 @@ $(window).resize(function(){
 
 function responsiveRefresh(){
     if ($(window).width() < 580) { 
+        //Mobile
 
 
 
-
-        
-
-
+        $('.text_footer').removeClass("col-6");
+        $('.footer_links').removeClass("col-6");
+        $('.text_footer').addClass("col-12");
+        $('.text_footer').addClass("col-12");
+        $('.laurens_footer_text').addClass("text-center");
+        $('.ul_footer_links').addClass("justify-content-center");
+        //Mobile
     }else if($(window).width() >= 580 && $(window).width() <= 982){
-    
+        //Tablet
 
 
 
 
 
-
-
+        $('.text_footer').addClass("col-6");
+        $('.footer_links').addClass("col-6");
+        $('.text_footer').removeClass("col-12");
+        $('.text_footer').removeClass("col-12");
+        $('.laurens_footer_text').removeClass("text-center");
+        $('.ul_footer_links').removeClass("justify-content-center");
+        //Table
     }else if($(window).width() > 982){
-    
+        //Desktop
 
 
 
-
-
-
-
+        $('.text_footer').addClass("col-6");
+        $('.footer_links').addClass("col-6");
+        $('.text_footer').removeClass("col-12");
+        $('.text_footer').removeClass("col-12");
+        $('.laurens_footer_text').removeClass("text-center");
+        $('.ul_footer_links').removeClass("justify-content-center");
+        //Desktop
     }
 
 

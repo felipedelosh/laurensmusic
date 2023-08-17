@@ -86,3 +86,14 @@
 .ico-footer-link{
     color: black;
 }
+
+.btn-go-top{
+    display: none;
+    height: 20px;
+	position: fixed;
+	bottom: 18%;
+	left: 95%;
+	transition: all 300ms ease 0ms;
+	z-index: 99;
+}
+

@@ -2,7 +2,9 @@
  * CLICK
  */
 //INTERNAL LINKS
-
+$( ".btn-go-top" ).on( "click", function() {
+    $("html, body").animate({scrollTop: 0}, 400);
+});
 
 
 //EXTERNAL LINKS
@@ -36,6 +38,16 @@ $( ".go-facebook" ).on( "click", function() {
 $(window).resize(function(){
     responsiveRefresh();
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 120) {
+        $('.btn-go-top').css("display", "block");
+    } else {
+        $('.btn-go-top').css("display", "none");
+    }
+});
+
+
 /**
  * hover
  */
@@ -65,6 +77,7 @@ $( ".ico-footer-link" ).hover(function() {
  * Reponsive desing
  */
 function responsiveRefresh(){
+    //To resize
     if ($(window).width() < 580) { 
         //Mobile
         $('.main_nav').css("display", "none");
@@ -74,7 +87,6 @@ function responsiveRefresh(){
         $('.about-me').addClass("col-12");
         $('.about-me-events').addClass("col-12");
 
-
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
         $('.ul_footer_links').removeClass("justify-content-end");
@@ -82,6 +94,7 @@ function responsiveRefresh(){
         $('.text_footer').addClass("col-12");
         $('.laurens_footer_text').addClass("text-center");
         $('.ul_footer_links').addClass("justify-content-center");
+        $('.btn-go-top').css("display", "none");
         //Mobile
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
@@ -99,6 +112,9 @@ function responsiveRefresh(){
         $('.laurens_footer_text').removeClass("text-center");
         $('.ul_footer_links').removeClass("justify-content-center");
         $('.ul_footer_links').addClass("justify-content-end");
+        if($(this).scrollTop() >= 120){
+            $('.btn-go-top').css("display", "block");
+        }
         //Table
     }else if($(window).width() > 982){
         //Desktop
@@ -116,6 +132,9 @@ function responsiveRefresh(){
         $('.laurens_footer_text').removeClass("text-center");
         $('.ul_footer_links').removeClass("justify-content-center");
         $('.ul_footer_links').addClass("justify-content-end");
+        if($(this).scrollTop() >= 120){
+            $('.btn-go-top').css("display", "block");
+        }
         //Desktop
     }
 

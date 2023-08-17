@@ -41,10 +41,12 @@ function responsiveRefresh(){
 
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
+        $('.ul_footer_links').removeClass("justify-content-end");
         $('.text_footer').addClass("col-12");
         $('.text_footer').addClass("col-12");
         $('.laurens_footer_text').addClass("text-center");
         $('.ul_footer_links').addClass("justify-content-center");
+
         //Mobile
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
@@ -59,6 +61,7 @@ function responsiveRefresh(){
         $('.text_footer').removeClass("col-12");
         $('.laurens_footer_text').removeClass("text-center");
         $('.ul_footer_links').removeClass("justify-content-center");
+        $('.ul_footer_links').addClass("justify-content-end");
         //Table
     }else if($(window).width() > 982){
         //Desktop
@@ -71,9 +74,9 @@ function responsiveRefresh(){
         $('.text_footer').removeClass("col-12");
         $('.laurens_footer_text').removeClass("text-center");
         $('.ul_footer_links').removeClass("justify-content-center");
+        $('.ul_footer_links').addClass("justify-content-end");
         //Desktop
     }
-
 
 }
 

@@ -1,6 +1,19 @@
 /**
  * CLICK
  */
+//INTERNAL LINKS
+
+
+
+//EXTERNAL LINKS
+$( ".go-song-chula" ).on( "click", function() {
+    openNewTab("https://www.youtube.com/watch?v=y2bdiRUnsz0");
+});
+
+$( ".go-song-futbolin" ).on( "click", function() {
+    openNewTab("https://www.youtube.com/watch?v=KWGtd2zodQ4");
+});
+
 $( ".go-youtube" ).on( "click", function() {
     openNewTab("https://www.youtube.com/channel/UCV87mEQ7dWl_lsTy11dYH_A");
 });
@@ -23,6 +36,25 @@ $( ".go-facebook" ).on( "click", function() {
 $(window).resize(function(){
     responsiveRefresh();
 });
+/**
+ * hover
+ */
+$( ".main_nav_click_element" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("color", "white");
+}).mouseleave(function() {  
+    $(this).css("color", "black");
+});
+
+$( ".ico-footer-link" ).hover(function() {
+    $(this).fadeOut(5);
+    $(this).fadeIn(25);
+    $(this).css("color", "#e74c3c");
+}).mouseleave(function() {  
+    $(this).css("color", "black");
+});
+
 
 
 /**
@@ -32,14 +64,10 @@ $(window).resize(function(){
 /**
  * Reponsive desing
  */
-
 function responsiveRefresh(){
     if ($(window).width() < 580) { 
         //Mobile
-
-
-
-
+        $('.main_nav').css("display", "none");
 
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
@@ -53,10 +81,7 @@ function responsiveRefresh(){
         //Tablet
 
 
-
-
-
-
+        $('.main_nav').css("display", "block");
         
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
@@ -69,7 +94,7 @@ function responsiveRefresh(){
     }else if($(window).width() > 982){
         //Desktop
 
-
+        $('.main_nav').css("display", "block");
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");

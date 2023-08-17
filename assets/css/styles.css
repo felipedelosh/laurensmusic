@@ -1,8 +1,15 @@
 .header{
-    background-color: #e74c3c;
-    position: fixed;
+    padding-top: 4%;
+    background: #e74c3c;
+    position: relative;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
+} 
+
+.main_nav{
+    list-style: none;
+    float: right;
+
 }
 
 .laurens_home_banner_img{
@@ -23,8 +30,39 @@
     transform: translate(-50%, -50%);
 }
 
+.main_title{
+    color: #e74c3c;
+}
+
+.article{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.laurens_img_container_1{
+    margin: 0;
+}
+
+.card_list_events_1{
+    list-style: none;
+}
+
+.date_show{
+    background: #3e454c;
+    display: block;
+    padding: 14px 0 11px 0;
+    font: 600 20px/28px 'Open Sans';
+    color: #ffffff;
+    float: left;
+    border-radius: 1px;
+    margin-right: 32px;
+    width: 70px;
+}
+
+
 .footer{
     background-color: #343840;
+    padding: 0 0 49px 0;
 }
 
 .footer-line-elements{
@@ -43,4 +81,8 @@
 .li_footer_links{
     padding-left:3px;
     padding-right:3px;
+}
+
+.ico-footer-link{
+    color: black;
 }

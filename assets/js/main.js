@@ -52,16 +52,31 @@ $(window).scroll(function() {
  * hover
  */
 $( ".main_nav_click_element" ).hover(function() {
-    $(this).fadeOut(5);
-    $(this).fadeIn(25);
     $(this).css("color", "white");
 }).mouseleave(function() {  
     $(this).css("color", "black");
 });
 
-$( ".ico-footer-link" ).hover(function() {
-    $(this).fadeOut(5);
-    $(this).fadeIn(25);
+
+$( ".ico-footer-link-youtube" ).hover(function() {
+    $(this).css("color", "#e74c3c");
+}).mouseleave(function() {  
+    $(this).css("color", "black");
+});
+
+$( ".ico-footer-link-spotify" ).hover(function() {
+    $(this).css("color", "#e74c3c");
+}).mouseleave(function() {  
+    $(this).css("color", "black");
+});
+
+$( ".ico-footer-link-instagram" ).hover(function() {
+    $(this).css("color", "#e74c3c");
+}).mouseleave(function() {  
+    $(this).css("color", "black");
+});
+
+$( ".ico-footer-link-facebook" ).hover(function() {
     $(this).css("color", "#e74c3c");
 }).mouseleave(function() {  
     $(this).css("color", "black");

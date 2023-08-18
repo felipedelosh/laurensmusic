@@ -135,7 +135,21 @@ function responsiveRefresh(){
         $('.my_bio_section_photos_laurens').removeClass("col-4");
         $('.my_bio_section_photos_laurens').addClass("col-12");
 
-        $('.bi-person-fill-add').css("float", 'none');
+        $('.bi-person-fill-add').css("float", "none");
+        $('.bi-person-fill-add').css("margin-right", "none");
+        $('.part_legend_add_friend').removeClass("col-10");
+        $('.part_btn_enter_fan_club').removeClass("col-2");
+        $('.part_legend_add_friend').addClass("col-12");
+        $('.part_btn_enter_fan_club').addClass("col-12");
+        $('.part_legend_add_friend').addClass("col-12");
+        $('.part_btn_enter_fan_club').addClass("col-12");
+
+        $('.ico_add_friend').css("display", "flex");
+        $('.ico_add_friend').css("justify-content", "center");
+        $('.ico_add_friend_text_title').css("text-align", "center");
+        $('.ico_add_friend_text_description').css("text-align", "center");
+        $('.part_btn_enter_fan_club').css("display", "grid");
+        $('.part_btn_enter_fan_club').css("justify-content", "center");
 
 
         $('.text_footer').removeClass("col-6");
@@ -176,7 +190,21 @@ function responsiveRefresh(){
         $('.my_bio_section_photos_laurens').removeClass("col-4");
         $('.my_bio_section_photos_laurens').addClass("col-12");
 
-        $('.bi-person-fill-add').css("float", 'none');
+        $('.bi-person-fill-add').css("float", "none");
+        $('.bi-person-fill-add').css("margin-right", "none");
+        $('.part_legend_add_friend').removeClass("col-10");
+        $('.part_btn_enter_fan_club').removeClass("col-2");
+        $('.part_legend_add_friend').addClass("col-12");
+        $('.part_btn_enter_fan_club').addClass("col-12");
+        $('.part_legend_add_friend').addClass("col-12");
+        $('.part_btn_enter_fan_club').addClass("col-12");
+
+        $('.ico_add_friend').css("display", "flex");
+        $('.ico_add_friend').css("justify-content", "center");
+        $('.ico_add_friend_text_title').css("text-align", "center");
+        $('.ico_add_friend_text_description').css("text-align", "center");
+        $('.part_btn_enter_fan_club').css("display", "grid");
+        $('.part_btn_enter_fan_club').css("justify-content", "center");
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
@@ -218,6 +246,19 @@ function responsiveRefresh(){
         $('.my_bio_section_photos_laurens').addClass("col-4");
 
         $('.bi-person-fill-add').css("float", "left");  
+        $('.part_legend_add_friend').removeClass("col-12");
+        $('.part_btn_enter_fan_club').removeClass("col-12");
+        $('.part_legend_add_friend').removeClass("col-12");
+        $('.part_btn_enter_fan_club').removeClass("col-12");
+        $('.part_legend_add_friend').addClass("col-10");
+        $('.part_btn_enter_fan_club').addClass("col-2");
+        $('.bi-person-fill-add').css("margin-right", "2%");
+        $('.ico_add_friend').css("display", "block");
+        $('.ico_add_friend').css("justify-content", "normal");
+        $('.ico_add_friend_text_title').css("text-align", "start");
+        $('.ico_add_friend_text_description').css("text-align", "start");
+        $('.part_btn_enter_fan_club').css("display", "block");
+        $('.part_btn_enter_fan_club').css("justify-content", "normal");
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");

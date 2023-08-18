@@ -102,6 +102,12 @@ function responsiveRefresh(){
         $('.about-me').addClass("col-12");
         $('.about-me-events').addClass("col-12");
 
+        $('.laurens_img_container_1').removeClass("col-7");
+        $('.laurens_text_container_1').removeClass("col-5");
+        $('.laurens_img_container_1').addClass("col-12");
+        $('.laurens_text_container_1').addClass("col-12");
+
+
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
         $('.ul_footer_links').removeClass("justify-content-end");
@@ -119,6 +125,12 @@ function responsiveRefresh(){
         $('.about-me-events').removeClass("col-12");
         $('.about-me').addClass("col-8");
         $('.about-me-events').addClass("col-4");
+
+        $('.laurens_img_container_1').removeClass("col-12");
+        $('.laurens_text_container_1').removeClass("col-12");
+        $('.laurens_img_container_1').addClass("col-7");
+        $('.laurens_text_container_1').addClass("col-5");
+
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
@@ -139,6 +151,11 @@ function responsiveRefresh(){
         $('.about-me-events').removeClass("col-12");
         $('.about-me').addClass("col-8");
         $('.about-me-events').addClass("col-4");
+
+        $('.laurens_img_container_1').removeClass("col-12");
+        $('.laurens_text_container_1').removeClass("col-12");
+        $('.laurens_img_container_1').addClass("col-7");
+        $('.laurens_text_container_1').addClass("col-5");
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");

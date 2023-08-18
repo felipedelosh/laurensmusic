@@ -118,6 +118,16 @@ function responsiveRefresh(){
         $('.laurens_text_container_1').addClass("col-12");
 
 
+        $('.part_legend_add_friend').removeClass("col-10");
+        $('.part_btn_enter_fan_club').removeClass("col-2");
+        $('.part_legend_add_friend').addClass("col-12");
+        $('.part_btn_enter_fan_club').addClass("col-12");
+
+        $('.bi-person-fill-add').css({"float": ""});
+        $('.bi-person-fill-add').css({"float": ""});
+        alert($('.bi-person-fill-add').css("float"));
+
+
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
         $('.ul_footer_links').removeClass("justify-content-end");

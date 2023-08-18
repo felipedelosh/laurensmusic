@@ -294,7 +294,7 @@ function responsiveRefresh(){
 
 
 function _calculateMediaPlayerToMovileDevices(){
-
+    
 }
 
 

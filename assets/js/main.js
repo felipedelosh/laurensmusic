@@ -97,6 +97,14 @@ function responsiveRefresh(){
         //Mobile
         $('.main_nav').css("display", "none");
 
+        $('.text_lengend_in_banner').css("top", "26%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "38%");
+        $('.music_in_banner').css("top", "36%");
+
         $('.about-me').removeClass("col-8");
         $('.about-me-events').removeClass("col-4");
         $('.about-me').addClass("col-12");
@@ -120,6 +128,14 @@ function responsiveRefresh(){
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
         $('.main_nav').css("display", "block");
+
+        $('.text_lengend_in_banner').css("top", "46%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-8");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').addClass("display-6");
+        $('.music_in_banner').css("left", "26%");
+        $('.music_in_banner').css("top", "56%");
         
         $('.about-me').removeClass("col-12");
         $('.about-me-events').removeClass("col-12");
@@ -146,6 +162,13 @@ function responsiveRefresh(){
     }else if($(window).width() > 982){
         //Desktop
         $('.main_nav').css("display", "block");
+
+        $('.text_lengend_in_banner').css("top", "60%");
+        $('.text_lengend_in_banner').css("left", "30%");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-2");
+        $('.music_in_banner').css("left", "20%");
+        $('.music_in_banner').css("top", "70%");
 
         $('.about-me').removeClass("col-12");
         $('.about-me-events').removeClass("col-12");

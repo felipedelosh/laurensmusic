@@ -6,10 +6,25 @@ $( ".btn-go-top" ).on( "click", function() {
     $("html, body").animate({scrollTop: 0}, 400);
 });
 
-$( ".btn-go-top" ).on( "click", function() {
-    $("html, body").animate({scrollTop: 0}, 400);
+$( ".btn-show-home" ).on( "click", function() {
+    showHomeSection();
 });
 
+$( ".btn-show-about" ).on( "click", function() {
+    showAboutSection();
+});
+
+$( ".btn-show-gallery" ).on( "click", function() {
+
+});
+
+$( ".btn-show-blog" ).on( "click", function() {
+
+});
+
+$( ".btn-show-contact" ).on( "click", function() {
+    
+});
 
 //EXTERNAL LINKS
 $( ".go-song-chula" ).on( "click", function() {
@@ -272,15 +287,57 @@ function responsiveRefresh(){
         }
         //Desktop
     }
+}
+
+
+function _calculateMediaPlayerToMovileDevices(){
 
 }
 
 
 function hideALLSections(){
+    //PUT Buttons off
+    $('.main_nav_click_element').css("color", "black");
+    $('.banner_img').css("display", "none");
+    $('.article').css("display", "none");
+    $('.about_my_bio').css("display", "none");
+}
+
+
+/***
+ * 
+btn-show-home
+btn-show-about
+btn-show-gallery
+btn-show-blog
+btn-show-contact
+*/
+
+function showHomeSection(){
+    hideALLSections();
     $('.banner_img').css("display", "block");
     $('.article').css("display", "block");
-    $('.about_my_bio').css("display", "block");
+    $('.btn-show-home').css("color", "white");
 }
+
+function showAboutSection(){
+    hideALLSections();
+    $('.about_my_bio').css("display", "block");
+    $('.btn-show-about').css("color", "white");
+}
+
+function showGallerySection(){
+    hideALLSections();
+}
+
+function showBlogSection(){
+    hideALLSections();
+}
+
+function showContactSection(){
+    hideALLSections();
+}
+
 
 /**
  * Enter a URL and open in new tab
@@ -302,4 +359,4 @@ function openHTML(url){
 }
 
 responsiveRefresh();
-hideALLSections();
+showHomeSection();

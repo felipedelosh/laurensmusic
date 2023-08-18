@@ -15,7 +15,7 @@ $( ".btn-show-about" ).on( "click", function() {
 });
 
 $( ".btn-show-gallery" ).on( "click", function() {
-
+    showGallerySection();
 });
 
 $( ".btn-show-blog" ).on( "click", function() {
@@ -150,6 +150,9 @@ function responsiveRefresh(){
         $('.my_bio_section_music_laurens').addClass("col-12");
         $('.my_bio_section_photos_laurens').removeClass("col-4");
         $('.my_bio_section_photos_laurens').addClass("col-12");
+        
+        $('.gallery_element').removeClass("col-4");
+        $('.gallery_element').addClass("col-12");
 
         $('.bi-person-fill-add').css("float", "none");
         $('.bi-person-fill-add').css("margin-right", "none");
@@ -207,6 +210,9 @@ function responsiveRefresh(){
         $('.my_bio_section_photos_laurens').removeClass("col-4");
         $('.my_bio_section_photos_laurens').addClass("col-12");
 
+        $('.gallery_element').removeClass("col-4");
+        $('.gallery_element').addClass("col-12");
+
         $('.bi-person-fill-add').css("float", "none");
         $('.bi-person-fill-add').css("margin-right", "none");
         $('.part_legend_add_friend').removeClass("col-10");
@@ -263,6 +269,9 @@ function responsiveRefresh(){
         $('.my_bio_section_music_laurens').addClass("col-4");
         $('.my_bio_section_photos_laurens').addClass("col-4");
 
+        $('.gallery_element').removeClass("col-12");
+        $('.gallery_element').addClass("col-4");
+
         $('.bi-person-fill-add').css("float", "left");  
         $('.part_legend_add_friend').removeClass("col-12");
         $('.part_btn_enter_fan_club').removeClass("col-12");
@@ -304,6 +313,7 @@ function hideALLSections(){
     $('.banner_img').css("display", "none");
     $('.article').css("display", "none");
     $('.about_my_bio').css("display", "none");
+    $('.gallery_box').css("display", "none");
 }
 
 
@@ -330,6 +340,8 @@ function showAboutSection(){
 
 function showGallerySection(){
     hideALLSections();
+    $('.gallery_box').css("display", "block");
+    $('.btn-show-gallery').css("color", "white");
 }
 
 function showBlogSection(){

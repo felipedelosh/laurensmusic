@@ -87,6 +87,11 @@
     color: black;
 }
 
+.privacy_policy_link{
+    color: #6e7884;
+    text-decoration:none;
+}
+
 .btn-go-top{
     display: none;
     height: 5%;

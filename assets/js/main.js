@@ -40,10 +40,12 @@ $(window).resize(function(){
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 120) {
-        $('.btn-go-top').css("display", "block");
-    } else {
-        $('.btn-go-top').css("display", "none");
+    if($(this).width() >= 580){
+        if ($(this).scrollTop() >= 120) {
+            $('.btn-go-top').css("display", "block");
+        } else {
+            $('.btn-go-top').css("display", "none");
+        }
     }
 });
 

@@ -117,6 +117,7 @@ function responsiveRefresh(){
     if ($(window).width() < 580) { 
         //Mobile
         $('.main_nav').css("display", "none");
+        $('.mobile_main_nav').css("display", "flex");
 
         $('.text_lengend_in_banner').css("top", "26%");
         $('.text_lengend_in_banner').css("left", "26%");
@@ -179,6 +180,7 @@ function responsiveRefresh(){
     }else if($(window).width() >= 580 && $(window).width() <= 982){
         //Tablet
         $('.main_nav').css("display", "block");
+        $('.mobile_main_nav').css("display", "none");
 
         $('.text_lengend_in_banner').css("top", "46%");
         $('.text_lengend_in_banner').css("left", "26%");
@@ -235,6 +237,7 @@ function responsiveRefresh(){
     }else if($(window).width() > 982){
         //Desktop
         $('.main_nav').css("display", "block");
+        $('.mobile_main_nav').css("display", "none");
 
         $('.text_lengend_in_banner').css("top", "60%");
         $('.text_lengend_in_banner').css("left", "30%");
@@ -312,7 +315,6 @@ btn-show-gallery
 btn-show-blog
 btn-show-contact
 */
-
 function showHomeSection(){
     hideALLSections();
     $('.banner_img').css("display", "block");

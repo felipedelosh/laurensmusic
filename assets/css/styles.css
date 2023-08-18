@@ -67,6 +67,8 @@
 .bi-person-fill-add{
     width: 10%;
     color: white;
+    float: left;
+    margin-right: 1%;
 }
 
 .btn_enter_fan_club{

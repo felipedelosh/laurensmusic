@@ -6,6 +6,10 @@ $( ".btn-go-top" ).on( "click", function() {
     $("html, body").animate({scrollTop: 0}, 400);
 });
 
+$( ".btn-go-top" ).on( "click", function() {
+    $("html, body").animate({scrollTop: 0}, 400);
+});
+
 
 //EXTERNAL LINKS
 $( ".go-song-chula" ).on( "click", function() {
@@ -123,9 +127,15 @@ function responsiveRefresh(){
         $('.part_legend_add_friend').addClass("col-12");
         $('.part_btn_enter_fan_club').addClass("col-12");
 
-        $('.bi-person-fill-add').css({"float": ""});
-        $('.bi-person-fill-add').css({"float": ""});
-        alert($('.bi-person-fill-add').css("float"));
+        
+        $('.my_bio_section_who_laurens').removeClass("col-4");
+        $('.my_bio_section_who_laurens').addClass("col-12");
+        $('.my_bio_section_music_laurens').removeClass("col-4");
+        $('.my_bio_section_music_laurens').addClass("col-12");
+        $('.my_bio_section_photos_laurens').removeClass("col-4");
+        $('.my_bio_section_photos_laurens').addClass("col-12");
+
+        $('.bi-person-fill-add').css("float", 'none');
 
 
         $('.text_footer').removeClass("col-6");
@@ -159,6 +169,14 @@ function responsiveRefresh(){
         $('.laurens_img_container_1').addClass("col-7");
         $('.laurens_text_container_1').addClass("col-5");
 
+        $('.my_bio_section_who_laurens').removeClass("col-4");
+        $('.my_bio_section_who_laurens').addClass("col-12");
+        $('.my_bio_section_music_laurens').removeClass("col-4");
+        $('.my_bio_section_music_laurens').addClass("col-12");
+        $('.my_bio_section_photos_laurens').removeClass("col-4");
+        $('.my_bio_section_photos_laurens').addClass("col-12");
+
+        $('.bi-person-fill-add').css("float", 'none');
 
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
@@ -192,6 +210,15 @@ function responsiveRefresh(){
         $('.laurens_img_container_1').addClass("col-7");
         $('.laurens_text_container_1').addClass("col-5");
 
+        $('.my_bio_section_who_laurens').removeClass("col-12");
+        $('.my_bio_section_music_laurens').removeClass("col-12");
+        $('.my_bio_section_photos_laurens').removeClass("col-12");
+        $('.my_bio_section_who_laurens').addClass("col-4");
+        $('.my_bio_section_music_laurens').addClass("col-4");
+        $('.my_bio_section_photos_laurens').addClass("col-4");
+
+        $('.bi-person-fill-add').css("float", "left");  
+
         $('.text_footer').addClass("col-6");
         $('.footer_links').addClass("col-6");
         $('.text_footer').removeClass("col-12");
@@ -205,6 +232,13 @@ function responsiveRefresh(){
         //Desktop
     }
 
+}
+
+
+function hideALLSections(){
+    $('.banner_img').css("display", "block");
+    $('.article').css("display", "block");
+    $('.about_my_bio').css("display", "block");
 }
 
 /**
@@ -227,3 +261,4 @@ function openHTML(url){
 }
 
 responsiveRefresh();
+hideALLSections();

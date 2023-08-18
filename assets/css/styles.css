@@ -59,6 +59,11 @@
     width: 70px;
 }
 
+.list_music_box_laurens{
+    list-style: none;
+    padding: 0;
+}
+
 .join_box{
     padding: 51px 0 59px 0;
     background-color: #3e454c;

@@ -59,15 +59,32 @@
     width: 70px;
 }
 
+.join_box{
+    padding: 51px 0 59px 0;
+    background-color: #3e454c;
+}
+
+.bi-person-fill-add{
+    width: 10%;
+    color: white;
+}
+
+.btn_enter_fan_club{
+    color: #ffffff;
+    background: #e74c3c;
+    padding: 22px 24px;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
 
 .footer{
     background-color: #343840;
     padding: 0 0 49px 0;
 }
 
-.footer-line-elements{
-    margin-top: 5%;
-}
 
 .laurens_footer_text_name{
     color: white;
@@ -79,8 +96,8 @@
 }
 
 .li_footer_links{
-    padding-left:3px;
-    padding-right:3px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .ico-footer-link{

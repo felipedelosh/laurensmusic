@@ -306,11 +306,23 @@ function responsiveRefresh(){
 
 function _calculateMediaPlayerToMovileDevices(){
     //Iphone 12/13
-    var iphoneMini = $(window).width() >= 360 && $(window).width() <= 399 && $(window).height() >= 800 && $(window).height() <= 850;
-    var iphonePro = $(window).width() >= 400 && $(window).width() <= 450 && $(window).height() >= 900 && $(window).height() <= 999;
-    var iphoneX = $(window).width() >= 365 && $(window).width() >= 398 && $(window).height() >= 800 && $(window).height() <= 899;
+    var _w = $(window).width();
+    var _h = $(window).height();
+    var iphoneMiniH = _w >= 360 && _w <= 399 && _h >= 800 && _h <= 850;
+    var iphoneProH = _w >= 400 && _w <= 450 && _h >= 900 && _h <= 999;
+    var iphone5SEH = _w >= 300 && _w <= 340 && _h >= 550 && _h <= 600;
+    var iphone678PlUSH = _w >= 380 && _w <= 440 && _h >= 710 && _h <= 750;
+    var iphoneXH = _w >= 365 && _w <= 398 && _h >= 800 && _h <= 899;
+    var iphoneXRH = _w >= 400 && _w <= 420 && _h >= 880 && _h <= 910;
+    var iphoneSEH = _w >= 350 && _w <= 385 && _h >= 650 && _h <= 700;
+    var kindleH = _w >= 780 && _w <= 820 && _h >= 1260 && _h <= 1300;
+    var androidBasicH = _w >= 580 && _w <= 620 && _h >= 940 && _h <= 980;  
+    var androidPixelH = _w >= 400 && _w <= 420 && _h >= 800 && _h <= 840;    
+    var notDisplayH = _w < 280 && _h <= 340;
 
-    if(iphoneMini){
+    $('.text_lengend_in_banner').css("display", "block");
+    $('.music_in_banner').css("display", "block");
+    if(iphoneMiniH){
         $('.text_lengend_in_banner').css("top", "20%");
         $('.text_lengend_in_banner').css("left", "26%");
         $('.text_banner_img').removeClass("display-2");
@@ -318,7 +330,7 @@ function _calculateMediaPlayerToMovileDevices(){
         $('.text_banner_img').addClass("display-8");
         $('.music_in_banner').css("left", "42%");
         $('.music_in_banner').css("top", "26%");    
-    }else if(iphonePro){
+    }else if(iphoneProH){
         $('.text_lengend_in_banner').css("top", "20%");
         $('.text_lengend_in_banner').css("left", "26%");
         $('.text_banner_img').removeClass("display-2");
@@ -326,8 +338,23 @@ function _calculateMediaPlayerToMovileDevices(){
         $('.text_banner_img').addClass("display-8");
         $('.music_in_banner').css("left", "42%");
         $('.music_in_banner').css("top", "26%");
-    }else if(iphoneX){
-        alert("IphoneX");
+    }else if(iphone5SEH){
+        $('.text_lengend_in_banner').css("top", "24%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "46%");
+        $('.music_in_banner').css("top", "30%");
+    }else if(iphone678PlUSH){
+        $('.text_lengend_in_banner').css("top", "24%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "46%");
+        $('.music_in_banner').css("top", "30%");
+    }else if(iphoneXH){
         $('.text_lengend_in_banner').css("top", "18%");
         $('.text_lengend_in_banner').css("left", "26%");
         $('.text_banner_img').removeClass("display-2");
@@ -335,9 +362,52 @@ function _calculateMediaPlayerToMovileDevices(){
         $('.text_banner_img').addClass("display-8");
         $('.music_in_banner').css("left", "42%");
         $('.music_in_banner').css("top", "24%");
+    }else if(iphoneXRH){
+        $('.text_lengend_in_banner').css("top", "18%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "42%");
+        $('.music_in_banner').css("top", "22%");
+    }else if(iphoneSEH){
+        $('.text_lengend_in_banner').css("top", "20%");
+        $('.text_lengend_in_banner').css("left", "26%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "42%");
+        $('.music_in_banner').css("top", "26%");
+    }else if(kindleH){
+        $('.text_lengend_in_banner').css("top", "20%");
+        $('.text_lengend_in_banner').css("left", "18%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "22%");
+        $('.music_in_banner').css("top", "26%");
+    }else if(androidBasicH){;
+        $('.text_lengend_in_banner').css("top", "22%");
+        $('.text_lengend_in_banner').css("left", "18%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "28%");
+        $('.music_in_banner').css("top", "26%");
+    }else if(androidPixelH){
+        $('.text_lengend_in_banner').css("top", "22%");
+        $('.text_lengend_in_banner').css("left", "20%");
+        $('.text_banner_img').removeClass("display-2");
+        $('.text_banner_img').removeClass("display-6");
+        $('.text_banner_img').addClass("display-8");
+        $('.music_in_banner').css("left", "40%");
+        $('.music_in_banner').css("top", "26%");
+    }else if(notDisplayH){
+        $('.text_lengend_in_banner').css("display", "none");
+        $('.music_in_banner').css("display", "none");
     }else{
         //calculate from desktop or table
-        if($(window).width() < 580){ // Mobile default
+        if(_w < 580){ // Mobile default
             $('.text_lengend_in_banner').css("top", "26%");
             $('.text_lengend_in_banner').css("left", "26%");
             $('.text_banner_img').removeClass("display-2");
@@ -345,7 +415,7 @@ function _calculateMediaPlayerToMovileDevices(){
             $('.text_banner_img').addClass("display-8");
             $('.music_in_banner').css("left", "38%");
             $('.music_in_banner').css("top", "36%");
-        }else if($(window).width() >= 580 && $(window).width() <= 982){ //Tablet default
+        }else if(_w >= 580 && _w <= 982){ //Tablet default
             $('.text_lengend_in_banner').css("top", "46%");
             $('.text_lengend_in_banner').css("left", "26%");
             $('.text_banner_img').removeClass("display-8");
@@ -353,7 +423,7 @@ function _calculateMediaPlayerToMovileDevices(){
             $('.text_banner_img').addClass("display-6");
             $('.music_in_banner').css("left", "26%");
             $('.music_in_banner').css("top", "56%");
-        }else if($(window).width() > 982){ // Desktop default
+        }else if(_w > 982){ // Desktop default
             $('.text_lengend_in_banner').css("top", "60%");
             $('.text_lengend_in_banner').css("left", "30%");
             $('.text_banner_img').removeClass("display-6");

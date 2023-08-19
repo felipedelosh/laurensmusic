@@ -76,6 +76,7 @@ $( ".main_nav_click_element" ).hover(function() {
     $(this).css("color", "white");
 }).mouseleave(function() {  
     $(this).css("color", "black");
+    updateColorCurrentPageMenu();
 });
 
 
@@ -360,29 +361,45 @@ function showHomeSection(){
 function showAboutSection(){
     hideALLSections();
     $('.about_my_bio').css("display", "block");
-    $('.btn-show-about').css("color", "white");
     localStorage.setItem('current_view', "ABOUT");
+    updateColorCurrentPageMenu();
 }
 
 function showGallerySection(){
     hideALLSections();
     $('.gallery_box').css("display", "block");
-    $('.btn-show-gallery').css("color", "white");
     localStorage.setItem('current_view', "GALLERY");
+    updateColorCurrentPageMenu();
 }
 
 function showBlogSection(){
     hideALLSections();
     $('.blog_section').css("display", "block");
-    $('.btn-show-blog').css("color", "white");
     localStorage.setItem('current_view', "BLOG");
+    updateColorCurrentPageMenu();
 }
 
 function showContactSection(){
     hideALLSections();
     $('.contact_me').css("display", "block");
-    $('.btn-show-contact').css("color", "white");
     localStorage.setItem('current_view', "CONTACT");
+    updateColorCurrentPageMenu();
+}
+
+function updateColorCurrentPageMenu(){
+    if(localStorage.getItem('current_view') !== null){
+        if(localStorage.getItem('current_view') === "HOME"){
+            $('.btn-show-home').css("color", "white");
+        }else if(localStorage.getItem('current_view') === "ABOUT"){
+            $('.btn-show-about').css("color", "white");
+        }else if(localStorage.getItem('current_view') === "GALLERY"){
+            $('.btn-show-gallery').css("color", "white");
+        }else if(localStorage.getItem('current_view') === "BLOG"){
+            $('.btn-show-blog').css("color", "white");
+        }else if(localStorage.getItem('current_view') === "CONTACT"){
+            $('.btn-show-contact').css("color", "white");
+        }
+    }
 }
 
 

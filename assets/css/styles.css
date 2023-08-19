@@ -92,6 +92,15 @@
     margin-top: 2%;
 }
 
+.btn_sumit_contact{
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.text_required_field_contact_form{
+    float: right;
+}
+
 .contact_from_input{
     width: 100%;
     border-radius: 0.25rem;

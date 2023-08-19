@@ -19,11 +19,11 @@ $( ".btn-show-gallery" ).on( "click", function() {
 });
 
 $( ".btn-show-blog" ).on( "click", function() {
-
+    showBlogSection();
 });
 
 $( ".btn-show-contact" ).on( "click", function() {
-    
+    showContactSection();
 });
 
 //EXTERNAL LINKS
@@ -137,13 +137,11 @@ function responsiveRefresh(){
         $('.laurens_img_container_1').addClass("col-12");
         $('.laurens_text_container_1').addClass("col-12");
 
-
         $('.part_legend_add_friend').removeClass("col-10");
         $('.part_btn_enter_fan_club').removeClass("col-2");
         $('.part_legend_add_friend').addClass("col-12");
         $('.part_btn_enter_fan_club').addClass("col-12");
 
-        
         $('.my_bio_section_who_laurens').removeClass("col-4");
         $('.my_bio_section_who_laurens').addClass("col-12");
         $('.my_bio_section_music_laurens').removeClass("col-4");
@@ -162,6 +160,13 @@ function responsiveRefresh(){
         $('.part_btn_enter_fan_club').addClass("col-12");
         $('.part_legend_add_friend').addClass("col-12");
         $('.part_btn_enter_fan_club').addClass("col-12");
+
+        $('.contact_links').removeClass("col-4");
+        $('.contact_from').removeClass("col-8");
+        $('.contact_links').addClass("col-12");
+        $('.contact_from').addClass("col-12");
+        $('.container_form_inputs').removeClass("row");
+        $('.contact_from_input_container').removeClass("col");
 
         $('.ico_add_friend').css("display", "flex");
         $('.ico_add_friend').css("justify-content", "center");
@@ -222,6 +227,14 @@ function responsiveRefresh(){
         $('.part_legend_add_friend').addClass("col-12");
         $('.part_btn_enter_fan_club').addClass("col-12");
 
+        $('.contact_links').addClass("col-4");
+        $('.contact_from').addClass("col-8");
+        $('.container_form_inputs').addClass("row");
+        $('.contact_from_input_container').addClass("col");
+        $('.contact_links').removeClass("col-12");
+        $('.contact_from').removeClass("col-12");
+	    $('.contact_from_input_container').css("margin-top", "none");
+
         $('.ico_add_friend').css("display", "flex");
         $('.ico_add_friend').css("justify-content", "center");
         $('.ico_add_friend_text_title').css("text-align", "center");
@@ -280,6 +293,15 @@ function responsiveRefresh(){
         $('.part_legend_add_friend').addClass("col-10");
         $('.part_btn_enter_fan_club').addClass("col-2");
         $('.bi-person-fill-add').css("margin-right", "2%");
+
+        $('.contact_links').addClass("col-4");
+        $('.contact_from').addClass("col-8");
+        $('.container_form_inputs').addClass("row");
+        $('.contact_from_input_container').addClass("col");
+        $('.contact_links').removeClass("col-12");
+        $('.contact_from').removeClass("col-12");
+	    $('.contact_from_input_container').css("margin-top", "none");
+
         $('.ico_add_friend').css("display", "block");
         $('.ico_add_friend').css("justify-content", "normal");
         $('.ico_add_friend_text_title').css("text-align", "start");
@@ -314,6 +336,8 @@ function hideALLSections(){
     $('.article').css("display", "none");
     $('.about_my_bio').css("display", "none");
     $('.gallery_box').css("display", "none");
+    $('.blog_section').css("display", "none");
+    $('.contact_me').css("display", "none");
 }
 
 
@@ -330,26 +354,35 @@ function showHomeSection(){
     $('.banner_img').css("display", "block");
     $('.article').css("display", "block");
     $('.btn-show-home').css("color", "white");
+    localStorage.setItem('current_view', "HOME");
 }
 
 function showAboutSection(){
     hideALLSections();
     $('.about_my_bio').css("display", "block");
     $('.btn-show-about').css("color", "white");
+    localStorage.setItem('current_view', "ABOUT");
 }
 
 function showGallerySection(){
     hideALLSections();
     $('.gallery_box').css("display", "block");
     $('.btn-show-gallery').css("color", "white");
+    localStorage.setItem('current_view', "GALLERY");
 }
 
 function showBlogSection(){
     hideALLSections();
+    $('.blog_section').css("display", "block");
+    $('.btn-show-blog').css("color", "white");
+    localStorage.setItem('current_view', "BLOG");
 }
 
 function showContactSection(){
     hideALLSections();
+    $('.contact_me').css("display", "block");
+    $('.btn-show-contact').css("color", "white");
+    localStorage.setItem('current_view', "CONTACT");
 }
 
 

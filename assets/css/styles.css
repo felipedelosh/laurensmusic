@@ -18,7 +18,7 @@
 }
 
 .mobile_li_main_nav_click_element{
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .laurens_home_banner_img{
@@ -71,6 +71,35 @@
 .list_music_box_laurens{
     list-style: none;
     padding: 0;
+}
+
+.contact_me{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contact_links{
+    margin-top: 2%;
+    margin-bottom: 2%;  
+}
+
+.contact_from{
+    margin-top: 2%;
+    margin-bottom: 2%;     
+}
+
+.contact_from_input_container{
+    margin-top: 2%;
+}
+
+.contact_from_input{
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #e5e5e5;
+}
+
+#text_area_contact{
+    resize:none;
 }
 
 .join_box{

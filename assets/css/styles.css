@@ -43,6 +43,16 @@
     color: #e74c3c;
 }
 
+.visible_btn{
+    color: #ffffff;
+    background: #e74c3c;
+    padding: 10px 12px;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
 .article{
     margin-top: 4%;
     margin-bottom: 4%;
@@ -71,6 +81,26 @@
 .list_music_box_laurens{
     list-style: none;
     padding: 0;
+}
+
+.date_title_blog_post{
+    background: #3e454c;
+    color: white;
+    font: 600 40px/58px 'Open Sans';
+}
+.month_in_date_title_blog_post{
+    background: white;
+    color: black;
+    font: 600 20px/30px 'Open Sans';
+}
+
+.link_categories_in_blog{
+    color:#343840;
+    text-decoration: none;
+}
+
+.li_categories_in_blog{
+    color: #e74c3c;
 }
 
 .contact_me{

@@ -146,6 +146,11 @@ function responsiveRefresh(){
         $('.gallery_element').removeClass("col-4");
         $('.gallery_element').addClass("col-12");
 
+        $('.blog_section_blog').removeClass("col-8");
+        $('.blog_section_navigation').removeClass("col-4");
+        $('.blog_section_blog').addClass("col-12");
+        $('.blog_section_navigation').addClass("col-12");
+
         $('.bi-person-fill-add').css("float", "none");
         $('.bi-person-fill-add').css("margin-right", "none");
         $('.part_legend_add_friend').removeClass("col-10");
@@ -168,7 +173,6 @@ function responsiveRefresh(){
         $('.ico_add_friend_text_description').css("text-align", "center");
         $('.part_btn_enter_fan_club').css("display", "grid");
         $('.part_btn_enter_fan_club').css("justify-content", "center");
-
 
         $('.text_footer').removeClass("col-6");
         $('.footer_links').removeClass("col-6");
@@ -204,6 +208,11 @@ function responsiveRefresh(){
 
         $('.gallery_element').removeClass("col-4");
         $('.gallery_element').addClass("col-12");
+
+        $('.blog_section_blog').removeClass("col-8");
+        $('.blog_section_navigation').removeClass("col-4");
+        $('.blog_section_blog').addClass("col-12");
+        $('.blog_section_navigation').addClass("col-12");
 
         $('.bi-person-fill-add').css("float", "none");
         $('.bi-person-fill-add').css("margin-right", "none");
@@ -264,6 +273,11 @@ function responsiveRefresh(){
 
         $('.gallery_element').removeClass("col-12");
         $('.gallery_element').addClass("col-4");
+    
+        $('.blog_section_blog').removeClass("col-12");
+        $('.blog_section_navigation').removeClass("col-12");
+        $('.blog_section_blog').addClass("col-8");
+        $('.blog_section_navigation').addClass("col-4");
 
         $('.bi-person-fill-add').css("float", "left");  
         $('.part_legend_add_friend').removeClass("col-12");
